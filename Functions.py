@@ -10,7 +10,7 @@
 
 
 
-
+#----
 
 # Passing Lists to a Function
 
@@ -35,6 +35,7 @@ completed_models = []
 print_models(unprinted_designs[:], completed_models)
 show_completed_models(completed_models)
 
+#----
 
 # Passing an arbitrary number of arguments
 
@@ -60,3 +61,6 @@ def make_pizza(size, *toppings):
 
 make_pizza(16, 'pepperoni')
 make_pizza(12, 'mushrooms', "green peppers", "corn")
+
+
+#----
