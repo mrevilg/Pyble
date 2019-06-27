@@ -64,3 +64,19 @@ make_pizza_(12, 'mushrooms', "green peppers", "corn")
 
 
 #----
+
+# Here the ** tells Python to create an empty Dictionary
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    # this loop adds additional data from ** to profile dict (line 5)
+    for key,value in user_info.items():
+        profile[key] = value
+    return profile
+
+user_profile = build_profile('albert', 'einstein',
+                                location='princeton',
+                                field='physics')
+print(user_profile)
