@@ -1,2 +1,2 @@
-# Pyble
+# Pyble :snake:
 Python Bible
