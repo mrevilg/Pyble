@@ -3,7 +3,7 @@
 # file/folder
 
 # This makes all functions/entire module available
-import <module/file-name> #note no '.py'
+# Punched out for syntax: import module/file-name #note no '.py'
 
 # This instantiates the function
 module/file-name.function_name()
