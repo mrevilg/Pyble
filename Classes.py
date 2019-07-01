@@ -141,3 +141,5 @@ class ElectricCar(Car): # Example of inheritance
 my_tesla = ElectricCar('tesla', 'models s', 2016)
 print(my_tesla.get_descriptive_name())
 my_tesla.describe_battery()
+
+# -------------------------------------------------------------------------------
