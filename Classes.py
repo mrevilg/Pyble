@@ -117,3 +117,27 @@ my_used_car.increment_odometer(100)
 my_used_car.read_odometer()
 
 # ---------------------------------------------------------------------------------
+
+class ElectricCar(Car): # Example of inheritance
+    """Represents aspect of the car, specific to electric vehicles."""
+    
+    # Parent must be in file and before Child
+    def __init__(self, make, model, year,): # attributes for Car
+        """
+        Initialize attributes of the parent class.
+        Then initialize attributes specific to Elec car.
+        """
+        super().__init__(make, model, year,) # Calls parent __init__
+        self.battery_size = 70
+    
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print("This car has a " + str(self.battery_size) + "-kwh battery.")
+
+    def fill_gas_tank(self): # If this were in the Parent (same name) you can override method
+        """Electric cars don't typically have gas tanks."""
+        print("This car doesn;t have a gas tank!")
+
+my_tesla = ElectricCar('tesla', 'models s', 2016)
+print(my_tesla.get_descriptive_name())
+my_tesla.describe_battery()
