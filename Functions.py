@@ -1,10 +1,18 @@
+# Functions are objects
+def add_five(num):
+    print (num + 5)
 
+add_five(2)
 
+# Functions within functions
 
+# Returning functions from functions
 
+# Decorating a function
 
+# Decorators
 
-
+# Decorators w/ Parameters
 
 
 
