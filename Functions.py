@@ -1,25 +1,5 @@
-# Functions are objects
-def add_five(num):
-    print (num + 5)
-
-add_five(2) # '()' indicates invocation of executable code
-
-# Functions within functions
-def add_five():
-
-# Returning functions from functions
-
-# Decorating a function
-
-# Decorators
-
-# Decorators w/ Parameters
 
 
-
-
-
-#----
 
 # Passing Lists to a Function
 
@@ -89,3 +69,29 @@ user_profile = build_profile('albert', 'einstein',
                                 location='princeton',
                                 field='physics')
 print(user_profile)
+
+#--- Decorators and Functions
+
+# Functions are objects
+def add_five(num):
+    print (num + 5)
+
+add_five(2) # '()' indicates invocation of executable code
+
+# Functions within functions
+def add_five(num):
+    def add_two(num): # This def is not public
+        return num + 2
+
+    num_plus_two = add_two(num)
+    print(num_plus_two + 3)    
+
+add_five(10)
+
+# Returning functions from functions
+
+# Decorating a function
+
+# Decorators
+
+# Decorators w/ Parameters
