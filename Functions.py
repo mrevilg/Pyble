@@ -89,6 +89,20 @@ def add_five(num):
 add_five(10)
 
 # Returning functions from functions
+def getMathFunction(operation): # + or -
+    def add(num1, num2):
+        return num1 + num2
+    def sub(num1, num2):
+        return num1 - num2
+
+    if operation == '+':
+        return add
+    elif operation == '-':
+        return sub
+
+add_func = getMathFunction('+')
+sub_func = getMathFunction('-')
+print(sub_func(10, 3))
 
 # Decorating a function
 
