@@ -2,9 +2,10 @@
 def add_five(num):
     print (num + 5)
 
-add_five(2)
+add_five(2) # '()' indicates invocation of executable code
 
 # Functions within functions
+def add_five():
 
 # Returning functions from functions
 
